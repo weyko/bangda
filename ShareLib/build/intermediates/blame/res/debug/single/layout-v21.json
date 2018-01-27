@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\weyko\\workspace\\self\\bangda_android\\ShareLib\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\zhong\\.android\\build-cache\\aca9ed0e49b12f7bb932b531fb2b79c99342e155\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\weyko\\workspace\\self\\bangda_android\\ShareLib\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\zhong\\.android\\build-cache\\aca9ed0e49b12f7bb932b531fb2b79c99342e155\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\weyko\\workspace\\self\\bangda_android\\ShareLib\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\zhong\\.android\\build-cache\\aca9ed0e49b12f7bb932b531fb2b79c99342e155\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\weyko\\workspace\\self\\bangda_android\\ShareLib\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\zhong\\.android\\build-cache\\aca9ed0e49b12f7bb932b531fb2b79c99342e155\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]

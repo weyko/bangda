@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <!--模拟背景的padding的size 6dp-->
+    <item>
+        <!--原来的需求区域-->
+        <shape android:shape="rectangle">
+            <!-- 实心 -->
+            <solid android:color="@android:color/white"/>
+            <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px"/>
+            <!-- 边框 -->
+            <stroke
+                android:width="1px" android:color="@color/colorPrimary" />
+            <!-- 圆角 -->
+            <corners android:radius="3dp"/>
+        </shape>
+
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+#Fri Jan 26 16:45:26 CST 2018
+base.0=C\:\\weyko\\workspace\\self\\bangda_android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9a37f8db10753b3674943d030a31905ebc56931d
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\weyko\\workspace\\self\\bangda_android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f693bae0559ad183fb98d2ebdcecc10f68c0c9a1\\classes.dex
+base.1=C\:\\weyko\\workspace\\self\\bangda_android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f693bae0559ad183fb98d2ebdcecc10f68c0c9a1
+file.0=C\:\\weyko\\workspace\\self\\bangda_android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_9a37f8db10753b3674943d030a31905ebc56931d\\classes.dex

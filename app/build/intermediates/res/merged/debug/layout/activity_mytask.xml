@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <RadioGroup
+          android:id="@+id/rg_mytask"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:background="@android:color/white"
+          android:orientation="horizontal">
+          <RadioButton
+              android:id="@+id/rb_sended_mytask"
+              style="@style/mytask_tab"
+              android:checked="true"
+              android:text="@string/task_sended" />
+          <View style="@style/a_line_v"/>
+          <RadioButton
+              android:id="@+id/rb_got_mytask"
+              style="@style/mytask_tab"
+              android:text="@string/task_doing" />
+          <View style="@style/a_line_v"/>
+          <RadioButton
+              android:id="@+id/rb_pay_mytask"
+              style="@style/mytask_tab"
+              android:text="@string/task_paying"/>
+          <View style="@style/a_line_v"/>
+          <RadioButton
+              android:id="@+id/rb_complete_mytask"
+              style="@style/mytask_tab"
+              android:text="@string/task_complete"/>
+      </RadioGroup>
+      <View
+          style="@style/a_line"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:visibility="gone"
+          android:orientation="horizontal">
+          <TextView
+              style="@style/text_style_3"
+              android:text="任务个数：" />
+          <TextView
+              android:id="@+id/tv_counts_mytask"
+              style="@style/text_style_3"
+              android:layout_width="match_parent"
+              android:text="10" />
+      </LinearLayout>
+      <include
+          android:id="@+id/view_list_mytask"
+          android:visibility="gone"
+          layout="@layout/layout_list"/>
+      <android.support.v4.view.ViewPager
+          android:id="@+id/vp_mytask"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      </android.support.v4.view.ViewPager>
+  </LinearLayout>
+</layout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.weyko.shops.view.DrawableClickableEditText
+                android:id="@+id/cet_input_reback"
+                style="@style/input_style"
+                android:gravity="left|top"
+                android:hint="@string/reback_input_hinit"
+                android:lines="5"
+                android:padding="@dimen/layout_title_pading"
+                android:maxLength="150" />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayoutTheme">
+
+                <com.weyko.shops.view.DrawableClickableEditText
+                    android:id="@+id/cet_connect_reback"
+                    style="@style/input_style"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:hint="@string/reback_connect"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_style_3"
+            android:text="@string/reback_hint" />
+    </LinearLayout>
+</layout>

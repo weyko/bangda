@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#546E7A</color>
+    <color name="colorAccent">#78909C</color>
+    <color name="colorAccentUnable">#90A4AE</color>
+    <color name="colorHint">#B0BEC5</color>
+    <color name="colorLight">#ECEFF1</color>
+    <color name="colorPage">#FAFAFA</color>
+
+    <!-- 红色 -->
+    <color name="color_red">#FF5252</color>
+    <color name="color_green">#14A238</color>
+    <!-- HSB 90%蓝灰 描边 -->
+    <color name="bg_line">#CFD8DC</color>
+    <!-- HSB 90%灰 #ECEFF1-->
+    <color name="bg_item">#90FAFAFA</color>
+    <!-- 透明 -->
+    <color name="tm">#00000000</color>
+    <!-- 半透明40% -->
+    <color name="b_tm">#66000000</color>
+    <!-- 半透明40% -->
+    <color name="b_tm_light">#10000000</color>
+
+    <!-- 菜单字体 -->
+    <color name="text_menu_color">#3b3b3b</color>
+
+    <!-- 标题、正文、可编辑文字 -->
+    <color name="text_color_1">#3b3b3b</color>
+    <!-- 辅助文字、提示、评论、 -->
+    <color name="text_color_2">#808080</color>
+    <!-- 输入框提示文字 -->
+    <color name="text_color_3">#CCCCCC</color>
+    <!-- 进度按钮颜色 -->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#FF5722</color>
+    <color name="cpb_red_dark">#F4511E</color>
+    <color name="cpb_green">#8BC34A</color>
+    <color name="cpb_green_dark">#7CB342</color>
+    <color name="cpb_white">@android:color/white</color>
+</resources>

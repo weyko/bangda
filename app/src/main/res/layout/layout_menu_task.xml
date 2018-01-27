@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_menu_task"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="right"
+    android:padding="3dp"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_menu_task"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:background="@drawable/bg_editext">
+        <TextView
+            android:id="@+id/tv_sended_menu_task"
+            style="@style/text_style_menu"
+            android:text="已发布"/>
+        <View style="@style/a_line"/>
+        <TextView
+            android:id="@+id/tv_got_menu_task"
+            style="@style/text_style_menu"
+            android:text="已接单"/>
+        <View style="@style/a_line"/>
+        <TextView
+            android:id="@+id/tv_pay_menu_task"
+            style="@style/text_style_menu"
+            android:text="待付款"/>
+        <View style="@style/a_line"/>
+        <TextView
+            android:id="@+id/tv_complete_menu_task"
+            style="@style/text_style_menu"
+            android:text="已完成"/>
+    </LinearLayout>
+</LinearLayout>

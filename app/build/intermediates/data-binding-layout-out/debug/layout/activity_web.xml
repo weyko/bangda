@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPage"
+    android:id="@+id/rl"
+    android:orientation="vertical"  android:tag="layout/activity_web_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/web_title"
+        layout="@layout/layout_title" />
+
+    <com.weyko.shops.view.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/web_title" >
+    </com.weyko.shops.view.ProgressWebView>
+</RelativeLayout>
+         

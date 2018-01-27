@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 顶部headview高度 -->
+    <dimen name="activity_padding_top">32dp</dimen>
+</resources>

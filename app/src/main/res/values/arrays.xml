@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="service">
+        <item >服务一</item>
+        <item >服务二</item>
+        <item >服务三</item>
+        <item >服务四</item>
+        <item >服务五</item>
+        <item >服务六</item>
+    </string-array>
+</resources>

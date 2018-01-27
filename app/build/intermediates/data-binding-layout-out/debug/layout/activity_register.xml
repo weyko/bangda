@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                        
+                                                                       
+
+               
+                           
+                                                      
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" android:tag="layout/activity_register_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <View
+            style="@style/a_line"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayoutTheme">
+
+                <com.weyko.shops.view.DrawableClickableEditText
+                    android:id="@+id/cet_account_register"
+                    style="@style/input_style"
+                    android:hint="@string/login_account"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayoutTheme">
+
+                <com.weyko.shops.view.DrawableClickableEditText
+                    android:id="@+id/cet_pwd_register"
+                    style="@style/input_style"
+                    android:hint="@string/login_pwd"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:tag="binding_1"           />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextInputLayoutTheme"
+                    android:layout_weight="1">
+
+                    <com.weyko.shops.view.DrawableClickableEditText
+                        android:id="@+id/cet_code_register"
+                        style="@style/input_style"
+                        android:hint="@string/register_code"
+                        android:singleLine="true"
+                        android:background="@color/tm"
+                        android:tag="binding_2"               />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/tv_code_register"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPage"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_2"
+                    android:enabled="false"
+                    android:text="@string/register_code_get"
+                    android:textColor="@color/recode_btn_selector" />
+            </LinearLayout>
+            <View style="@style/a_line"/>
+            <android.support.design.widget.TextInputLayout
+                style="@style/TextInputLayoutTheme">
+                <EditText
+                    android:id="@+id/et_invite_register"
+                    style="@style/input_style"
+                    android:hint="邀请码"
+                    android:singleLine="true"
+                    android:tag="binding_3"             />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <com.weyko.shops.view.CircularProgress.CircularProgressButton
+            android:id="@+id/tv_register_register"
+            style="@style/btn_style"
+            app:cpb_textIdle="@string/register" />
+    </LinearLayout>
+         

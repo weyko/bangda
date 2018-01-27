@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:padding="@dimen/input_vertical_margin"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_root_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="1dp"
+        android:background="@drawable/bg_editext"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            style="@style/text_style_1"/>
+        <View style="@style/a_line" android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_msg_dialog"
+            style="@style/text_style_2"
+            android:lineSpacingExtra="3dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_hint_dialog"
+            style="@style/text_style_3"
+            android:visibility="gone"
+            android:padding="0dp" />
+        </LinearLayout>
+        <View style="@style/a_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_cancal_dialog"
+                android:text="@string/cancal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/dialog_round_right_selector"
+                style="@style/text_style_2"
+                android:clickable="true"
+                android:padding="@dimen/layout_title_pading"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/bg_line"/>
+            <TextView
+                android:id="@+id/tv_sure_dialog"
+                android:text="@string/sure"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/dialog_round_left_selector"
+                android:textColor="@color/colorPrimary"
+                style="@style/text_style_2"
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:padding="@dimen/layout_title_pading"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+ </layout>

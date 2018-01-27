@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_selector"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title_search_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/text_color_1"
+        android:padding="@dimen/layout_default_pading"/>
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_4"
+        android:padding="5dp"
+        android:textColor="@color/text_color_2" />
+    <View   style="@style/a_line"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    signingConfigs {
+//        releaseKey {
+//            keyAlias 'shops'
+//            keyPassword 'weyko101'
+//            storeFile file('F:/apk/keystore/shops.jks')
+//            storePassword '4967521past'
+//        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.weyko.shops"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 3
+        versionName "1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dependencies {
+        compile fileTree(dir: 'libs', include: '*.jar')
+    }
+    dataBinding {
+        enabled = true
+    }
+    repositories{
+        flatDir{
+            dirs 'libs' //就是你放aar的目录地址
+        }
+    }
+//    greendao {
+//        schemaVersion 1
+//        daoPackage 'com.weyko.greendao.gen'
+//        targetGenDir 'src/main/java'
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.+'
+    compile 'com.android.support:design:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/AMap2DMap_4.2.0_AMapSearch_5.1.0_AMapLocation_3.4.0_20170517.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20161009.jar')
+    compile 'com.alibaba:fastjson:1.1.58.android'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile name: 'SMSSDK-3.0.0', ext: 'aar'
+    compile project(':ShareLib')
+}

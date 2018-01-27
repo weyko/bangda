@@ -1,0 +1,1 @@
+package com.weyko.shops.pay.alipay;public class PayResult {	private String resultStatus;	private String result;	private String memo;}

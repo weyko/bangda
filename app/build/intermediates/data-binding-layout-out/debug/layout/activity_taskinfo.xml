@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+    
+                 
+                       
+                                                                       
+                                          
+           
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_taskinfo_0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.weyko.shops.view.OnScrollChangerScrollView
+        android:id="@+id/sview_taskinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_task_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/layout_title_pading"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
+        android:layout_height="match_parent">
+        <com.weyko.shops.view.TaskStatueView
+            android:id="@+id/tsv_taskinfo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <View style="@style/a_line" android:layout_marginTop="@dimen/layout_default_pading"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/text_style_2"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/task_name"/>
+            <TextView
+                style="@style/text_style_3"
+                android:layout_width="match_parent"
+                android:tag="binding_1"        />
+        </LinearLayout>
+        <View style="@style/a_line" android:layout_marginTop="@dimen/layout_default_pading"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/text_style_2"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/task_describe"/>
+            <TextView
+                style="@style/text_style_3"
+                android:layout_width="match_parent"
+                android:tag="binding_2"            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        <TextView
+            style="@style/text_style_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/task_money_reward"/>
+        <TextView
+            style="@style/text_style_3"
+            android:tag="binding_3"                           />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_money_taskinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        <TextView
+            style="@style/text_style_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/task_goods_pay"/>
+        <EditText
+            android:id="@+id/et_goods_money_taskinfo"
+            android:inputType="numberDecimal"
+            style="@style/input_style"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="binding_4"                                        >
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        <TextView
+            style="@style/text_style_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/task_start_position"/>
+        <TextView
+            style="@style/text_style_3"
+            android:tag="binding_5"             />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        <TextView
+            style="@style/text_style_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/task_destination"/>
+        <TextView
+            style="@style/text_style_3"
+            android:tag="binding_6"           />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
+        android:orientation="vertical">
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        <TextView
+            style="@style/text_style_2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/task_send_time"
+            android:id="@+id/textView" />
+
+        <TextView
+            style="@style/text_style_3"
+            android:tag="binding_7"        />
+        <View style="@style/a_line" android:layout_marginLeft="@dimen/layout_default_pading"/>
+        </LinearLayout>
+    </LinearLayout>
+    </com.weyko.shops.view.OnScrollChangerScrollView>
+        <TextView
+            android:id="@+id/tv_get_task"
+            style="@style/btn_tran_style"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:visibility="gone"
+            android:text="@string/task_get" />
+    </FrameLayout>
+         

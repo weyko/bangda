@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+   <RelativeLayout
+       android:id="@+id/ll_main"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:id="@+id/view_title_main"
+            layout="@layout/layout_title"/>
+       <RadioGroup
+           android:id="@+id/rg_main"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:background="@android:color/white"
+           android:layout_alignParentBottom="true"
+           android:padding="5dp"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:id="@+id/rb_home_main"
+               style="@style/home_tab"
+               android:checked="true"
+               android:drawableTop="@drawable/tab_top_send_selector"
+               android:text="@string/tab_home" />
+           <RadioButton
+               android:id="@+id/rb_get_main"
+               style="@style/home_tab"
+               android:drawableTop="@drawable/tab_top_get_selector"
+               android:text="@string/tab_task" />
+           <RadioButton
+               android:id="@+id/rb_me_main"
+               style="@style/home_tab"
+               android:drawableTop="@drawable/tab_top_me_selector"
+               android:text="@string/tab_me" />
+       </RadioGroup>
+       <View android:id="@+id/line_main" android:layout_above="@+id/rg_main" style="@style/a_line"/>
+       <android.support.v4.view.ViewPager
+           android:id="@+id/vp_main"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/view_title_main"
+           android:layout_above="@+id/line_main"
+           android:layout_height="match_parent">
+       </android.support.v4.view.ViewPager>
+   </RelativeLayout>
+         

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:state_enabled="true" android:state_pressed="true">
+      <shape android:shape="rectangle">
+         <gradient
+             android:angle="270"
+             android:centerColor="#e8607D8B"
+             android:endColor="#e8546E7A"
+             android:type="linear"
+             android:centerY="2.5"
+             android:startColor="#e8546E7A" >
+         </gradient>
+         <corners android:radius="3dp"/>
+         <padding android:bottom="@dimen/layout_default_pading" android:left="@dimen/layout_default_pading" android:right="@dimen/layout_default_pading" android:top="@dimen/layout_default_pading"/>
+      </shape>
+   </item>
+   <item android:state_enabled="true" android:state_pressed="false">
+      <shape android:shape="rectangle">
+         <corners android:radius="3dp"/>
+         <padding android:bottom="@dimen/layout_default_pading" android:left="@dimen/layout_default_pading" android:right="@dimen/layout_default_pading" android:top="@dimen/layout_default_pading"/>
+         <solid android:color="#e8607D8B"/>
+      </shape>
+   </item>
+   <item android:state_enabled="false">
+      <shape android:shape="rectangle">
+         <corners android:radius="3dp"/>
+         <padding android:bottom="@dimen/layout_default_pading" android:left="@dimen/layout_default_pading" android:right="@dimen/layout_default_pading" android:top="@dimen/layout_default_pading"/>
+         <solid android:color="#e890A4AE"/>
+      </shape>
+   </item>
+</selector>

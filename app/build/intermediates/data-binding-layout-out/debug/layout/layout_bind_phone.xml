@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/layout_bind_phone_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/ll_step_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                style="@style/a_line"
+                android:layout_marginTop="@dimen/layout_title_pading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                    <com.weyko.shops.view.DrawableClickableEditText
+                        android:id="@+id/cet_account_bindphone"
+                        style="@style/input_style"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:hint="@string/login_account"
+                        android:inputType="phone"
+                        android:background="@color/tm"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/a_line" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextInputLayoutTheme"
+                        android:layout_weight="1">
+
+                        <com.weyko.shops.view.DrawableClickableEditText
+                            android:id="@+id/cet_code_bindphone"
+                            style="@style/input_style"
+                            android:hint="@string/register_code"
+                            android:background="@color/tm"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/tv_code_bindphone"
+                        android:layout_width="100dp"
+                        android:textSize="@dimen/text_size_2"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/colorPage"
+                        android:enabled="false"
+                        android:text="@string/register_code_get"
+                        android:textColor="@color/recode_btn_selector" />
+                </LinearLayout>
+
+                <View style="@style/a_line" />
+            </LinearLayout>
+
+            <com.weyko.shops.view.CircularProgress.CircularProgressButton
+                android:id="@+id/tv_next_bindphone"
+                style="@style/btn_style"
+                android:layout_gravity="center_horizontal"
+                app:cpb_textIdle="@string/next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_step_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                style="@style/a_line"
+                android:layout_marginTop="@dimen/layout_title_pading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                    <com.weyko.shops.view.DrawableClickableEditText
+                        android:id="@+id/cet_pwd_bindphone"
+                        style="@style/input_style"
+                        android:hint="@string/login_pwd"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+                    <com.weyko.shops.view.DrawableClickableEditText
+                        android:id="@+id/cet_pwd_again_bindphone"
+                        style="@style/input_style"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:hint="@string/pwd_agree"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_submit_bindphone"
+                style="@style/btn_style"
+                android:layout_margin="@dimen/input_vertical_margin"
+                android:text="@string/pwd_submit" />
+        </LinearLayout>
+    </FrameLayout>
+         

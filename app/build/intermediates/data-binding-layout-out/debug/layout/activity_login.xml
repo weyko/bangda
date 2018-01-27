@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                        
+                                                      
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:paddingTop="@dimen/input_vertical_margin" android:tag="layout/activity_login_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            style="@style/text_style_0"
+            android:layout_marginTop="50dp"
+            android:text="帮   哒" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <View style="@style/a_line"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_phone_login"
+                style="@style/TextInputLayoutTheme">
+                <com.weyko.shops.view.DrawableClickableEditText
+                    android:id="@+id/cet_input_account"
+                    style="@style/input_style"
+                    android:hint="@string/login_account"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_pwd_login"
+                style="@style/TextInputLayoutTheme">
+                <com.weyko.shops.view.DrawableClickableEditText
+                    android:id="@+id/cet_input_pwd"
+                    style="@style/input_style"
+                    android:hint="@string/login_pwd"
+                    android:inputType="textPassword"
+                    android:tag="binding_1"          
+                    android:singleLine="true"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/tv_fpwd_login"
+                style="@style/text_style_3"
+                android:background="@drawable/item_selector_trans"
+                android:clickable="true"
+                android:shadowColor="@color/text_color_3"
+                android:shadowDx="0.5"
+                android:shadowDy="0.5"
+                android:shadowRadius="0.5"
+                android:text="@string/login_forgot_password"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+        <com.weyko.shops.view.CircularProgress.CircularProgressButton
+            android:id="@+id/cpb_login"
+            style="@style/btn_style"
+            app:cpb_textIdle="@string/login_sign" />
+        <TextView
+            android:id="@+id/tv_register_login"
+            style="@style/text_style_3"
+            android:background="@drawable/item_selector_trans"
+            android:clickable="true"
+            android:shadowColor="@color/text_color_3"
+            android:shadowDx="0.5"
+            android:shadowDy="0.5"
+            android:shadowRadius="0.5"
+            android:text="@string/login_register"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/colorAccent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/input_vertical_margin"
+            android:layout_marginRight="@dimen/input_vertical_margin"
+            android:layout_marginTop="@dimen/input_vertical_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/a_line"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/text_style_3"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="快捷登录"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                style="@style/a_line"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlebar_selector"
+                android:clickable="true"
+                android:padding="@dimen/layout_default_pading"
+                android:src="@mipmap/icon_share_qq" />
+
+            <ImageView
+                android:id="@+id/iv_wexin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/input_vertical_margin"
+                android:background="@drawable/titlebar_selector"
+                android:clickable="true"
+                android:padding="@dimen/layout_default_pading"
+                android:src="@mipmap/icon_share_wx" />
+        </LinearLayout>
+    </LinearLayout>
+         

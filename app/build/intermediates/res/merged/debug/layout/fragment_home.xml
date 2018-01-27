@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.weyko.shops.task.send.SendData" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/sv_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/a_line"
+                    android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_area_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/send_area"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_2"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                        <com.weyko.shops.view.DrawableClickableEditText
+                            android:id="@+id/et_need_main"
+                            style="@style/input_style"
+                            android:hint="@string/send_taskname"
+                            android:maxLength="50"
+                            android:maxLines="3"
+                            android:text="@={model.taskName}">
+
+                            <requestFocus />
+                        </com.weyko.shops.view.DrawableClickableEditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                        <com.weyko.shops.view.DrawableClickableEditText
+                            android:id="@+id/tv_destination_main"
+                            style="@style/input_style"
+                            android:hint="@string/send_address"
+                            android:text="@={model.destination}" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                        <com.weyko.shops.view.DrawableClickableEditText
+                            android:id="@+id/et_money_main"
+                            style="@style/input_style"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:hint="@string/send_reward"
+                            android:inputType="numberDecimal" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/start_position_main"
+                        style="@style/input_style"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:clickable="true"
+                        android:drawableLeft="@mipmap/icon_list"
+                        android:hint="@string/send_start_address"
+                        android:singleLine="true"
+                        android:text="@={model.startPosition}"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout style="@style/TextInputLayoutTheme">
+
+                        <com.weyko.shops.view.DrawableClickableEditText
+                            android:id="@+id/et_mark_main"
+                            style="@style/input_style"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:hint="@string/send_mark"
+                            android:maxLength="150"
+                            android:maxLines="5"
+                            android:text="@={model.taskDescribe}" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.weyko.shops.view.CircularProgress.CircularProgressButton
+                    android:id="@+id/tv_send_main"
+                    style="@style/btn_style"
+                    android:layout_gravity="center_horizontal"
+                    app:cpb_textIdle="@string/send_btn" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/view_address"
+            layout="@layout/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+</layout>

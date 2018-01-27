@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_input_style">
+        <attr name="text" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="countLine" format="integer" />
+        <attr name="maxLines" format="integer" />
+        <attr name="singleLine" format="boolean" />
+        <attr name="inputType" format="enum">
+            <enum name="phone" value="1"/>
+            <enum name="number" value="2"/>
+            <enum name="pwd" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference"/>
+        <attr name="cpb_selectorComplete" format="reference"/>
+        <attr name="cpb_selectorError" format="reference"/>
+        <attr name="cpb_textComplete" format="string"/>
+        <attr name="cpb_textIdle" format="string"/>
+        <attr name="cpb_textError" format="string"/>
+        <attr name="cpb_textProgress" format="string"/>
+        <attr name="cpb_colorProgress" format="color"/>
+        <attr name="cpb_colorIndicator" format="color"/>
+        <attr name="cpb_colorIndicatorBackground" format="color"/>
+        <attr name="cpb_iconError" format="reference"/>
+        <attr name="cpb_iconComplete" format="reference"/>
+        <attr name="cpb_cornerRadius" format="dimension"/>
+        <attr name="cpb_paddingProgress" format="dimension"/>
+    </declare-styleable>
+</resources>

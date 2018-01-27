@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" android:tag="layout/layout_list_0" xmlns:android="http://schemas.android.com/apk/res/android">
+          <android.support.v4.widget.SwipeRefreshLayout
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/srl_frament_get"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.weyko.shops.fragment.GetTaskFragment">
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/rv_fragment_get"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scrollbarAlwaysDrawVerticalTrack="true"
+                   android:scrollbarSize="4dp"
+                   android:scrollbars="vertical" />
+          </android.support.v4.widget.SwipeRefreshLayout>
+          <include layout="@layout/layout_page_load"/>
+     </LinearLayout>
+         

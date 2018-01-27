@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">帮哒</string>
+    <string name="tab_home">悬赏</string>
+    <string name="tab_task">接单</string>
+    <string name="tab_me">我</string>
+
+    <string name="me_tasks">我的任务</string>
+    <string name="me_wallet">我的钱包</string>
+    <string name="me_share">邀请好友</string>
+    <string name="me_setting">设置</string>
+
+    <string name="set_reset_pwd">重置密码</string>
+    <string name="set_version">检查版本</string>
+    <string name="set_version_update_msg">检测到有新版本%s，是否更新?</string>
+    <string name="set_version_update_down_msg">检测到有新版本%s，\n并且已经下载，是否更新?</string>
+    <string name="set_version_update_sure">更新</string>
+    <string name="set_connect">联系客服</string>
+    <string name="set_connect_msg">确定拨打此号码?\n%s</string>
+    <string name="set_connect_hint">温馨提示：如果不能拨打,可尝试：设置->应用管理->帮哒->权限->电话</string>
+    <string name="set_connect_sure">立即拨打</string>
+    <string name="set_reback">意见反馈</string>
+    <string name="set_exit">退出当前账号</string>
+    <string name="set_exit_hint">我会静静等待你的再次归来~</string>
+    <string name="set_integral_service">等级制度服务协议</string>
+    <string name="set_service">服务条款</string>
+    <string name="set_copyright">万象通达 版权所有\nCopyRight © 2017 Bangda All Rights Reserved.</string>
+
+    <string name="server_string_null">服务器内部异常,请稍候再试~</string>
+    <string name="warning_network_error">网络不给力，请再试试啦~</string>
+    <string name="warning_service_error">服务器连接失败,请再试试啦～</string>
+    <string name="chat_textview_not_network">没有网络好痛苦啊，是不是设置出了问题呢~</string>
+
+    <string name="not_install_wx">未安装微信</string>
+    <string name="dialog_payment_select_pay_method">选择交易平台</string>
+    <string name="pay_aipay">支付宝</string>
+    <string name="pay_wxpay">微信</string>
+
+    <string name="address_default">深圳</string>
+    <string name="main_back_toast">再按一次退出</string>
+    <string name="ok">确认</string>
+    <string name="sure">确定</string>
+    <string name="cancal">取消</string>
+    <string name="send_taskname">请输入任务名称</string>
+    <string name="send_reward">请输入赏金(¥)</string>
+    <string name="send_mark">请输入任务描述(150字以内)</string>
+    <string name="send_start_address">请输入起点位置</string>
+    <string name="send_address">请输入目的地</string>
+    <string name="send_btn">发布</string>
+
+    <string name="login_account">请输入手机号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="login_pwd_repeat">再输入一次</string>
+    <string name="login_sign">登录</string>
+    <string name="register">注册</string>
+    <string name="register_scond"> 秒</string>
+    <string name="register_code">验证码</string>
+    <string name="register_code_get">获取验证码</string>
+
+    <string name="pwd_reset">重置密码</string>
+    <string name="pwd_agree">重复密码</string>
+    <string name="next">下一步</string>
+    <string name="pwd_submit">提交</string>
+    <string name="pwd_fail_agreed">重复密码不一致</string>
+
+    <string name="msg_auth_error">授权失败</string>
+    <string name="msg_auth_cancel">授权操作已取消</string>
+    <string name="ssdk_gender_male">男</string>
+    <string name="ssdk_gender_female">女</string>
+
+    <string name="nofity_new_msg">您有一个新的派单</string>
+    <string name="task_name">任务名称</string>
+    <string name="task_describe">任务描述</string>
+    <string name="task_money_reward">任务酬金(¥)</string>
+    <string name="task_goods_pay">购买商品金额(¥)</string>
+    <string name="task_start_position">起点位置</string>
+    <string name="task_destination">送达位置</string>
+    <string name="task_send_time">发布时间</string>
+    <string name="task_get">接单</string>
+    <string name="task_sended">已发布</string>
+    <string name="task_doing">已接单</string>
+    <string name="task_notify_pay">通知付款</string>
+    <string name="task_agree_pay">确认付款</string>
+    <string name="task_paying">待收款</string>
+    <string name="task_complete">已完成</string>
+    <string name="task_info_title">任务详情</string>
+    <string name="task_empty_sended">你的需求，触手可得~</string>
+    <string name="task_empty_got">一单到手，福利带走~</string>
+    <string name="task_empty_pay">任务尚未成功，同志仍在努力~</string>
+    <string name="task_empty_complete">静静等待，载誉而归~</string>
+
+    <string name="check_phone_hint">请输入手机号</string>
+    <string name="check_phone_right_hint">请输入正确手机号</string>
+    <string name="check_pwd_hint">请输入密码</string>
+    <string name="check_securitycode_hint">请输入验证码</string>
+    <string name="check_code_error">验证码错误</string>
+
+    <string name="load_loading">正在加载...</string>
+    <string name="load_more">上拉加载更多</string>
+    <string name="load_nomore">没有更多内容了</string>
+
+    <string name="invite_info_title">邀请好友玩法介绍</string>
+    <string name="invite_toast">邀请好友加入,赢取更多分成，福利多多，快来参加吧~</string>
+    <string name="invite_get_error_hint">获取邀请码</string>
+    <string name="invite_get_error_toast">请获取邀请码</string>
+    <string name="invite_helper">邀请帮助</string>
+
+    <!--钱包-->
+    <string name="wallet_balance">余额</string>
+    <string name="wallet_integral">积分</string>
+    <string name="wallet_withdraw">提现</string>
+    <string name="wallet_withdraw_helper">提现帮助</string>
+    <string name="wallet_record">记录</string>
+    <string name="wallet_toast">温馨提示：点击“余额”，“积分”可以查看记录</string>
+    <!--页面加载-->
+    <string name="pageload_error">加载失败,点击重试</string>
+    <string name="pageload_empty">一大波任务正在努力赶来...</string>
+    <string name="pageload_loading">努力加载中...</string>
+
+    <string name="record_wallet">钱包记录</string>
+    <string name="record_integral">积分记录</string>
+    <string name="record_empty_integral">暂无积分记录</string>
+    <string name="record_empty_hinit_wallet">暂无钱包记录</string>
+
+    <string name="reback_input_hinit">您的反馈是我们前进的动力~</string>
+    <string name="reback_input_hinit_toast">请输入您的反馈意见</string>
+    <string name="reback_connect">手机号或邮箱</string>
+    <string name="reback_connect_toast">请输入手机号或邮箱</string>
+    <string name="reback_connect_format_toast">联系方式格式有误</string>
+    <string name="reback_submit">提交</string>
+    <string name="reback_submit_toast">感谢您的支持~</string>
+    <string name="reback_hint">您的联系方式有助于我们解决问题,仅工作人员可见.</string>
+
+    <string name="down_title">版本更新</string>
+    <string name="down_msg">%s版本正在下载中</string>
+    <string name="down_fail">更新失败</string>
+    <string name="send_area">跨区派单</string>
+    <string name="login_forgot_password">忘记密码</string>
+    <string name="login_register">用户注册</string>
+</resources>
